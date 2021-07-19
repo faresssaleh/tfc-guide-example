@@ -1,4 +1,9 @@
 terraform {
+  backend "remote" {
+   organization = "ijc"
+   workspaces {
+     name = "Faress-Training-Github"
+   }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -11,5 +16,5 @@ terraform {
     }
   }
 
-  required_version = ">= 0.14.0"
+  required_version = ">= 0.14.9"
 }
