@@ -4,6 +4,7 @@ terraform {
    workspaces {
      name = "Faress-Training-Github"
    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
